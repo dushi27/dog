@@ -2,9 +2,9 @@ class Dog
 	attr_accessor :name, :breed, :age
 	@@number_of_dogs_in_the_city = 0
 
-	def initialize(name: raise,breed: raise,age: raise)
+	def initialize(breed:[],name: raise,age: raise)
 		@name = name
-		@breed = breed ||= []
+		@breed = breed == [] ? breed : breed.split(", ")
 		@age = age
 		@@number_of_dogs_in_the_city += 1
 	end

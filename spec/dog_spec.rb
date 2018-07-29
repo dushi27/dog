@@ -3,7 +3,6 @@ require 'spec_helper'
 describe Dog do 
 	before :each do 
 		@dog = Dog.new(name: 'foo', breed: 'German Sheperd', age: 2)
-
 	end
 
 	it 'should create a dog instance' do 

@@ -13,4 +13,3 @@ class Dog
 		p "woof woof! I'm #{self.name}"
 	end
 end
-

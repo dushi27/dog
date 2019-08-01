@@ -13,7 +13,7 @@ class Dog
 		p "woof woof! I'm #{self.name}"
 	end
 
-	def fetch(object)
+	def fetch(object: raise)
 		case object 
 		when "ball"
 			"oops!" 

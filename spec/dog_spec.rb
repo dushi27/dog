@@ -5,13 +5,17 @@ describe Dog do
 		@dog = Dog.new(name: 'foo', breed: 'German Sheperd', age: 2)
 	end
 
-	context "when @dog.fetch" do 
+	context 'when @dog.fetch' do 
 		it 'fetch a ball' do 
-			expect(@dog.fetch('ball')).to eq "fetching the ball" 
+			expect(@dog.fetch('ball')).to eq 'fetching the ball'
 		end
 
 		it 'fetch a stick' do 
-			expect(@dog.fetch('stick')).to eq "fetching the stick" 
+			expect(@dog.fetch('stick')).to eq 'fetching the stick' 
+		end
+
+		it 'fetch newspaper' do 
+			expect(@dog.fetch('newspaper')).to eq 'fetching the newspaper'
 		end
 	end
 

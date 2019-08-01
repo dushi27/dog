@@ -19,6 +19,8 @@ class Dog
 			"oops!" 
 		when "stick"
 			"fetching the stick" 
+		when "newspaper"
+			"fetching the newspaper"
 		end
 	end
 

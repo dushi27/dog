@@ -6,10 +6,6 @@ describe Dog do
 	end
 
 	context 'when @dog.fetch' do 
-		it 'fetch a ball' do 
-			expect(@dog.fetch('ball')).to eq 'fetching the ball'
-		end
-
 		it 'fetch a stick' do 
 			expect(@dog.fetch('stick')).to eq 'fetching the stick' 
 		end

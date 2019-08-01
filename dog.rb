@@ -16,7 +16,7 @@ class Dog
 	def fetch(object)
 		case object 
 		when "ball"
-			"fetching the ball"  
+			"oops!"  
 		end
 	end
 

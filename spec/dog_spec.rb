@@ -5,12 +5,22 @@ describe Dog do
 		@dog = Dog.new(name: 'foo', breed: 'German Sheperd', age: 2)
 	end
 
+	context "when @dog.fetch" do 
+		it 'fetch a ball' do 
+			expect(@dog.fetch('ball')).to eq "fetching the ball" 
+		end
+	end
+
 	it 'should create a dog instance' do 
 		@dog.should be_an_instance_of Dog
 	end
 
 	let :valid_params do 
 		{name: 'foo', breed: 'German Sheperd', age: 2}
+	end
+
+	it 'should require age' do 
+		expect{Dog.new(breed: 'German Sheperd')}.to raise_error
 	end
 
 	it 'should require name' do 

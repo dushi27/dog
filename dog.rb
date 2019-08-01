@@ -12,4 +12,12 @@ class Dog
 	def bark
 		p "woof woof! I'm #{self.name}"
 	end
+
+	def fetch(object)
+		case object 
+		when "ball"
+			"fetching the ball"  
+		end
+	end
+
 end
